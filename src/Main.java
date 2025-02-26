@@ -4,24 +4,24 @@ public class Main {
     public static void main(String[] args) {
 
 
-        System.out.printf("Go-мобайл приветствует Вас!   ");
+        System.out.print("Go-мобайл приветствует Вас!   ");
 
-        int i = 155;
+        int initialAccount = 155;
         //объявляем значение переменной - сумма начального счета клиента
-        int sumPopolnenie = 1200;
+        int sumAdd = 1200;
         //объявляем значение переменной - сумма пополнения
         int bonus;
         //бонус
-        int sumItog;
+        int sumTotal;
         //итоговая сумма на счету клиента после начисления бонусов и внесения пополнения
-        if (sumPopolnenie <= 1000) {
+        if (sumAdd <= 1000) {
             bonus = 0;
-            sumItog = i + sumPopolnenie + bonus;
-            System.out.println("У Вас на счету " + sumItog + " рублей.  За пополнение Вам было начислено " + bonus + " рублей");
+            sumTotal = initialAccount + sumAdd + bonus;
+            System.out.println("У Вас на счету " + sumTotal + " рублей.  За пополнение Вам было начислено " + bonus + " рублей");
         } else {
-            bonus = sumPopolnenie / 100;
-            sumItog = i + sumPopolnenie + bonus;
-            System.out.println("У Вас на счету " + sumItog + " рублей.  За пополнение Вам было начислено " + bonus + " рублей");
+            bonus = sumAdd / 100;
+            sumTotal = initialAccount + sumAdd + bonus;
+            System.out.println("У Вас на счету " + sumTotal + " рублей.  За пополнение Вам было начислено " + bonus + " рублей");
         }
 
     }
