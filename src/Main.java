@@ -4,7 +4,8 @@ public class Main {
     public static void main(String[] args) {
 
 
-        System.out.print("Go-мобайл приветствует Вас!   ");
+        System.out.println("Go-мобайл приветствует Вас!   ");
+        System.out.println();
 
         int initialAccount = 155;
         //объявляем значение переменной - сумма начального счета клиента
@@ -16,14 +17,13 @@ public class Main {
         //итоговая сумма на счету клиента после начисления бонусов и внесения пополнения
         if (sumAdd <= 1000) {
             bonus = 0;
-            sumTotal = initialAccount + sumAdd + bonus;
-            System.out.println("У Вас на счету " + sumTotal + " рублей.  За пополнение Вам было начислено " + bonus + " рублей");
+
         } else {
             bonus = sumAdd / 100;
-            sumTotal = initialAccount + sumAdd + bonus;
-            System.out.println("У Вас на счету " + sumTotal + " рублей.  За пополнение Вам было начислено " + bonus + " рублей");
-        }
 
+        }
+        sumTotal = initialAccount + sumAdd + bonus;
+        System.out.println("У Вас на счету " + sumTotal + " рублей.  За пополнение Вам было начислено " + bonus + " рублей.");
     }
 
 
